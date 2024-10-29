@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./styles/archive.css">
+   
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="archive.html">Archive</a>
+    </nav>
+    <div class="container">
+      <div class="filterDiv">
+        <select class="priority-select" id="prioritySelect">
+          <option value="">Select priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <select class="priority-select" id="statusSelect">
+          <option value="">Select Status</option>
+          <option value="Completed✅">Completed✅</option>
+          <option value="Pending🔃">Pending🔃</option>
+        </select>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Restore</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody id="todoTableBody">
+          <!-- Todo items will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+
+<script src="scripts/archive.js"></script>
